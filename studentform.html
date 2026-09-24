@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Form</title>
+        <link rel="stylesheet" href="studentform.css">
+    </head>
+    
+    <body>
+        
+        <div class="student-form">
+            <span class="title"><b><i>Student Form</i></b></span>
+            <hr class="top-line">
+            <hr class="bottom-line">
+            
+            <form>
+                <span class="category"><b><i>Personal Information</i></b></span><br>
+                First Name: <input type="text" name="first-name" required><br>
+                Middle Initial: <input type="text" name="middle-initial" required><br>
+                Last Name: <input type="text" name="last-name" required><br>
+                <br>
+                
+                Birthday: <input type="date" name="birthday" required><br>
+                Email: <input type="email" name="email" placeholder="customname@gmail.com" required><br>
+                Address: <input type="text" name="address" placeholder="complete address"><br>
+                Contact Number: <input type="tel" name="contact" placeholder="09*********">
+                <br>
+
+                Gender: <input type="radio" value="male">Male
+                        <input type="radio" value="female">Female
+                        <input type="radio" value="Other">Other<br>
+
+                Mode of Transportation:
+                        <input type="checkbox" value="Car">Car
+                        <input type="checkbox" value="Jeep">Jeep
+                        <input type="checkbox" value="Bike">Bike
+                        <input type="checkbox" value="Walking">Walk
+                        <input type="checkbox" value="Other">Other<br>
+
+                Year:
+                        <input type="radio" value="Grade11">Grade 11
+                        <input type="radio" value="Grade12">Grade 12<br>
+
+                Strand:
+                        <input type="radio" value="TechProICT">Tech-Pro ICT
+                        <input type="radio" value="ASSH-Comms">ASSH-Comms
+                        <input type="radio" value="ASSH-SocSci">ASSH-SocSci
+                        <input type="radio" value="BEn">BEn<br>
+                
+                <br>
+                <span class="category"><b><i>Parent's Information</i></b></span><br>
+                <b class="type">Mother:</b><br>
+                First Name: <input type="text" name="mother-firstname"><br>
+                Middle Initial: <input type="text" name="mothermi"><br>
+                Last Name: <input type="text" name="mother-lastname"><br>
+                Contact Number: <input type="tel" name="mother-contact" placeholder="09*********"><br>
+                Occupation: <input type="text" name="mother-occupation"><br>
+                
+                <br>
+                <b class="type">Father:</b><br>
+                First Name: <input type="text" name="father-firstname"><br>
+                Middle Initial: <input type="text" name="fathermi"><br>
+                Last Name: <input type="text" name="father-lastname"><br>
+                Contact Number: <input type="tel" name="mother-contact" placeholder="09*********"><br>
+                Occupation: <input type="text" name="father-occupation"><br>
+                
+                <br>
+                <input type="submit" class="submit">
+                <input type="reset" class="reset">
+            </form>
+        </div>    
+    </body>
+</html>

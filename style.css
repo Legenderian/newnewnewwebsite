@@ -4,12 +4,8 @@
 }
 
 .main{
-    width:100%;
-    background: linear-gradient(to top, rgba(255, 0, 242, 0.274)25%,rgba(255, 255, 255, 0.5)75%), url(citycolllege.jpg);
-    background-position: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 120px;
 }
 
 .navbar{
@@ -19,18 +15,18 @@
 
     background: linear-gradient(to top, #a8a8a8, #ffffff);
     background-image: url(pattern.jpg);
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .icon{
-    width: 1201px;
+    width: 60%;
     float: left;
     height: 100px;
 }
 
 .logo{
     color: gray;
-    font-size: 70px;
+    font-size: 59px;
     font-family: Arial;
     float: left;
     padding-left: 30px;
@@ -45,55 +41,40 @@
     text-shadow: black;
 }
 
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
+
+
+.hero{
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(255, 0, 242, 0.274) 25%,
+            rgba(255, 255, 255, 0.5) 75%
+        ),
+        url(citycolllege.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 100px 0;
+    padding-top: 50px;
 }
 
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero{
+    min-height: 100vh;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
 
-ul li{
-    list-style: none;
-    margin-left: 160px;
-    margin-top:40px;
-    font-size: 30px;
-    transition: 0.2s ease-in-out;
-}
 
-ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: Arial;
-    font-weight: bold;
-
-    background: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-
-    transition: 0.2s ease-out;
-}
-
-ul li:hover{
-    transform: scale(1.4);
-}
-
-ul li a:hover{
-    color:red;
-}
 
 .container{
     width: 100%;
     max-width: 1920px;
     text-align: center;
-
-    margin-top: -750px;
+    margin: 0 auto;
 }
 
 
@@ -103,6 +84,7 @@ ul li a:hover{
     height: 500px;
     margin: 30px;
     padding: 20px;
+    box-sizing: border-box;
 
     background-size: cover;
     background-position: center;
@@ -332,4 +314,136 @@ audio{
 .boks p{
     font-size: 25px;
     padding: 15px;
+}
+
+
+
+@media (max-width: 768px){
+
+    /* NAVBAR */
+
+    .navbar{
+        height: auto;
+        min-height: 150px;
+    }
+
+    .icon{
+        width: 100%;
+        height: auto;
+        float: none;
+        text-align: center;
+    }
+
+    .logo{
+        float: none;
+        font-size: 32px;
+        padding: 15px 10px;
+        display: inline-block;
+    }
+
+    .menu{
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    ul{
+        float: none;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    ul li{
+        margin: 10px;
+        font-size: 20px;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        min-height: auto;
+        padding: 50px 0;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    /* PROGRAM CARDS */
+
+    .textbox{
+        display: block;
+        width: 85%;
+        max-width: 400px;
+        height: auto;
+        min-height: 500px;
+        margin: 30px auto;
+    }
+
+
+    /* CARD ICONS */
+
+    .icon-img{
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* ABOUT SECTION */
+
+    .about-section{
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .left-side,
+    .right-side{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .info-box{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        border-radius: 30px;
+    }
+
+    .side-image{
+        width: 100%;
+        margin: 30px 0;
+    }
+
+
+    /* OFFICE BOXES */
+
+    .office-bokses{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .boks{
+        display: block;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        min-height: 220px;
+        box-sizing: border-box;
+        margin: 30px auto;
+    }
+
+
+    /* AUDIO */
+
+    audio{
+        width: 100px;
+        right: 10px;
+        bottom: 10px;
+    }
+
 }
